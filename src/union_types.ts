@@ -12,5 +12,5 @@ printStatusCode('404');
 
 // checking union type errors
 function printStatusCodeCheck(code:string | number) {
-    console.log(`My status code is ${code.toUpperCase()}`) // raises error
+    // console.log(`My status code is ${code.toUpperCase()}`) // raises error
 }
