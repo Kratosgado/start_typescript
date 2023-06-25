@@ -23,18 +23,18 @@ const newCar: Car = {
 // Interfaces
 // interfaces are just like aliases but only apply to objects
 
-interface Rectangle {
+interface Rectangle2 {
     height: number,
     width: number,
 }
 
-const rectangle: Rectangle = {
+const rectangle: Rectangle2 = {
     height: 20,
     width: 10
 }
 
 // Extending Interfaces
-interface ColoredRectangle extends Rectangle {
+interface ColoredRectangle extends Rectangle2 {
     color: string
 }
 

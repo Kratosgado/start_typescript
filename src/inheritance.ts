@@ -23,7 +23,7 @@ class Rectangle1 implements Shape {
 
 // OVERRIDE
 // we use override to replace members of the parent class with the same name
-class Square extends Rectangle {
+class Square extends Rectangle1 {
     public constructor(w: number) {
         super(w, w)
     }
