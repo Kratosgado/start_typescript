@@ -1,6 +1,7 @@
 {
   "include": [
-    "learning"
+    "learning",
+    "scripts"
   ],
   "compilerOptions": {
     "outDir": "./build",
