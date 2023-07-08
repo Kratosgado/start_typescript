@@ -1,6 +1,5 @@
-
-// objects are like or work like dictionaries in python and
-// map in java, c++ and dart
+// objects work like dictionaries in python
+// and Maps in c++, java, dart...
 
 // example without optional property
 const car: { type: string, model: string, year: number } = {
