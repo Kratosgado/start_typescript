@@ -8,10 +8,19 @@ type ViewerData = {
      viewer: ViewerData;
    };
  };
- 
+  // Example query
+  const GET_VIEWER_QUERY = `
+  query {
+    viewer {
+      name
+      avatarUrl
+    }
+  }
+`;
+
  async function fetchGraphQL(query: string, variables = {}) {
    const url = 'https://api.github.com/graphql'; // Replace with your GraphQL API URL
-   const token = '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'; // Replace with your Personal Access Token (PAT)
+   const token = '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'; // Replace with your Personal Access Token (PAT)
  
    const response = await fetch(url, {
      method: 'POST',
@@ -55,16 +64,7 @@ function assertIsGetViewerResponse(response: any): asserts response is GetViewer
      throw new Error('viewer avatarUrl is not a string');
    }
  }
- // Example query
- const GET_VIEWER_QUERY = `
-   query {
-     viewer {
-       name
-       avatarUrl
-     }
-   }
- `;
- 
+
  // Example usage
  async function fetchViewerData(): Promise<void> {
    try {
